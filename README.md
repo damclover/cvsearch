@@ -11,26 +11,22 @@ It allows you to search using keywords passed as command-line arguments and disp
 - [requests](https://pypi.org/project/requests/)
 - [colorama](https://pypi.org/project/colorama/)
 
-You can install the required packages with:
+You can auto-install with
 
 ```bash
-pip install requests colorama
+git clone https://github.com/damclover/cvsearch
+sudo chmod +x cvsearch/install.sh
+./cvsearch/install.sh
 ````
 
 ---
 
 ## Usage
 
-Make sure the script file `cvsearch.py` is executable:
-
-```bash
-chmod +x cvsearch.py
-```
-
 Run the script with keywords as arguments:
 
 ```bash
-./cvsearch.py wordpress file upload
+cvsearch wordpress file upload
 ```
 
 The script will search CVEs related to the keywords (e.g. "wordpress file upload") and print the CVE ID in green and the description in red.
