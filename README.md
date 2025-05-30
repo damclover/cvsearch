@@ -15,8 +15,9 @@ You can auto-install with
 
 ```bash
 git clone https://github.com/damclover/cvsearch
-sudo chmod +x cvsearch/install.sh
-./cvsearch/install.sh
+cd cvsearch
+sudo chmod +x install.sh
+./install.sh
 ````
 
 ---
