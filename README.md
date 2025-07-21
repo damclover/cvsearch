@@ -59,6 +59,12 @@ cvsearch CVE-2015-10138
 * Results are parsed and displayed with colored output for better readability.
 * With the Shodan update, you can now get more information about a given CVE.
 
+# Full Usage
+
+
+https://github.com/user-attachments/assets/c5ae37c2-a14d-40b0-b0c8-312a12dd941b
+
+
 ---
 
 ## Notes
