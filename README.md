@@ -10,6 +10,7 @@ It allows you to search using keywords passed as command-line arguments and disp
 - Python 3.x
 - [requests](https://pypi.org/project/requests/)
 - [colorama](https://pypi.org/project/colorama/)
+- re
 
 You can auto-install with
 
@@ -36,11 +37,19 @@ The script will search CVEs related to the keywords (e.g. "wordpress file upload
 
 ## Example Output
 
-```
-CVE-2025-12345: Vulnerability in the WordPress plugin that allows file upload without validation...
-CVE-2024-67890: Arbitrary file upload vulnerability in WordPress core...
+![alt text](image-1.png)
+
+# New update!!
+#### Now the script uses the Shodan API to detail CVEs (Shodan's free API)
+
+## Usage
+
+```bash
+cvsearch CVE-2015-10138
 ```
 
+## Output
+![alt text](image.png)
 ---
 
 ## How it works
@@ -48,6 +57,7 @@ CVE-2024-67890: Arbitrary file upload vulnerability in WordPress core...
 * The script takes all command-line arguments and concatenates them into a single search string.
 * It sends a request to the NVD REST API to search for CVEs containing the keywords.
 * Results are parsed and displayed with colored output for better readability.
+* With the Shodan update, you can now get more information about a given CVE.
 
 ---
 
